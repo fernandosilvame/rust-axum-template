@@ -1,0 +1,15 @@
+[package]
+name = "rust-axum-template"
+version = "2023.1122.1"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.6.20" }
+dotenv = { version = "0.15.0" }
+env_logger = { version = "0.10.0" }
+hyper = { version = "0.14.25", features = ["full"] }
+log = { version = "0.4.20" }
+serde_json = { version = "1.0.95" }
+tokio = { version = "1.27.0", features = ["full"] }
+tower = { version = "0.4.13", features = ["full"] }
+tower-http = { version = "0.4.0", features = ["cors"] }
