@@ -11,3 +11,11 @@ cp .env.template .env
 cargo build
 
 cargo run
+
+## To create docker image (replace the repository with your own):
+
+docker build -t <repository>/rust-axum-template .
+
+## To run using port 80 (http):
+
+docker run --name rust-axum-template -p <external_port>:<internal_port> <repository>/rust-axum-template:latest
